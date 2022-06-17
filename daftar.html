@@ -1,0 +1,133 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- title -->
+        <title>Klinik Kesehatan CanGeus</title>
+    
+        <!-- icon -->
+        <link rel="icon" href="logo-light.png">
+    
+        <!-- css -->
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="daftar.css">
+    </head>
+<body>
+
+    <!-- nav -->
+    <nav>
+        <div class="nav">
+            <div class="icon">
+                <a href="index.html"><img src="logo-dark.png" alt="logo"></a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-item">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav --> 
+
+    <!-- contact -->
+    <div class="pemeriksaan">
+        <h1>DAFTAR PEMERIKSAAN</h1>
+        <div class="box">
+            <form action="invoice.html" method="get" name="daftar">
+                <div class="title">
+                    <h2>IDENTITAS PASIEN</h2>
+                </div>
+                
+                <div class="flx">
+                    <label for="nama">Nama Depan</label>
+                    <input type="text" name="depan" id="nama" placeholder="Nama Depan">
+                    <label for="nama">Nama Belakang</label>
+                    <input type="text" name="belakang" id="nama" placeholder="Nama Belakang">
+                </div>
+                <div class="flx">
+                    <label for="kelamin">Jenis Kelamin</label>
+                    <select name="kelamin" id="kelamin">
+                        <option value="" selected="selected">Jenis Kelamin</option>
+                        <option value="Laki-laki">Laki - laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                    <label for="phone">Phone Number</label>
+                    <input type="number" name="phone" id="phone" placeholder="Phone Number">
+                </div>
+                <div class="flx">
+                    <label for="lahir">Tempat Lahir</label>
+                    <input type="text" name="lahir" id="lahir" placeholder="Tempat Lahir">
+                    <label for="tanggal">Tanggal Lahir</label>
+                    <input type="date" name="tanggal" id="tanggal" placeholder="TANGGAL LAHIR">
+                </div>
+                <label for="alamat">Alamat KTP</label>
+                <div class="alamat">
+                    <input type="text" name="rt" id="rt" placeholder="Jalan/Rt">
+                    <input type="text" name="desa" id="desa" placeholder="Desa">
+                </div>
+                <div class="alamat">
+                    <input type="text" name="kecamatan" id="kecamatan" placeholder="Kecamatan">
+                    <input type="text" name="kabupaten" id="kabupaten" placeholder="Kabupaten">
+                </div>
+                <div class="alamat">
+                    <select name="pelayanan" id="pelayanan">
+                        <option value="" selected="selected">Jenis Pelayanan</option>
+                        <option value="rawat-inap">Rawat Inap</option>
+                        <option value="rawat-jalan">Rawat Jalan</option>
+                    </select>
+                    <select name="asuransi" id="asuransi">
+                        <option value="" selected="selected">Asuransi Kesehatan</option>
+                        <option value="">Tidak Punya</option>
+                        <option value="bpjs">BPJS</option>
+                        <option value="astra">Astra</option>
+                        <option value="AXA">AXA</option>
+                        <option value="Allianz">Allianz</option>
+                    </select>
+                </div>
+                <div class="center">
+                    <button class="submit-btn submit" type="submit" onClick="tampil()">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- end contact -->
+
+
+    <!-- 
+        <script type="text/javascript">
+        function tampil() {
+                var name = document.daftar.nama.value;
+                var gender = document.daftar.kelamin.value;
+                var date = document.daftar.tanggal.value;
+                var born = document.daftar.lahir.value;
+                var address = document.daftar.alamat.value;
+                var mail = document.daftar.email.value;
+                var pone = document.daftar.phone.value;
+                var fell = document.daftar.keluhan.value;
+                var care = document.daftar.pelayanan.value;
+                var ansurance = document.daftar.asuransi.value;
+            if (name!= "" && gender!="" && date !=""&& born!=""&& address!=""&& mail!=""&& pone!=""&& fell!=""&& care!=""&& ansurance!="") {
+            newWindow = window.open("invoice.html", "STATUS PENDAFTARAN","width=500, height=200");
+            
+            
+            }else{
+                alert('Anda harus mengisi data dengan lengkap !');
+            }
+            }
+    </script>
+     -->
+
+
+
+    
+
+
+
+    
+</body>
+</html>

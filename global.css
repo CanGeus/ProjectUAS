@@ -1,0 +1,146 @@
+/* global */
+
+
+body {
+  margin: 0px;
+  padding: 0px 0px;
+  background: url(bg.jpg);
+  background-repeat: no-repeat;
+}
+@font-face {
+  font-family: kdam;
+  src: url(font/KdamThmorPro-Regular.ttf);
+
+}
+@font-face {
+  font-family: ksans;
+  src: url(font/Quicksand-VariableFont_wght.ttf);
+
+}
+*{
+  font-family: kdam;
+}
+ul {
+  padding: 0px;
+}
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.button {
+  align-items: center;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.7s;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #001E6C;
+}
+
+.btn:hover {
+  background-color: #40B291;
+}
+/* end global */
+
+/* nav */
+nav {
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.555);
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav .nav-item {
+  display: inline-flex;
+  align-items: center;
+  font-family: kdam;
+  font-size: 24px;
+}
+.nav .icon img{
+  width: 125%;
+}
+.nav .nav-item li {
+  margin-right: 20px;
+  font-weight: bold;
+}
+.nav .nav-item li a {
+  color: #000;
+}
+.nav .nav-item li :hover {
+  color: #40B291;
+  transition-duration: 0.7s;
+}
+/* end nav */
+/* donasi */
+.donasi {
+    color: #ffffff; 
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: #001E6C; 
+}
+.donasi .donasi-content {
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px;
+    align-items: center;
+    display: inline-flex;
+}
+.donasi li {
+    list-style-type: none;
+    font-weight: bold;
+}
+.donasi .button {
+    color: #001E6C;
+    background-color: #ffffff;
+}
+.donasi .btn:hover {
+    color: #fff;
+    background-color: #40B291;
+}
+
+/* end donasi */
+/* footer */
+
+footer {
+  padding: 75px 50px 25px;
+}
+footer li {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+}
+footer .alamat,.service,.inf,.tautan {
+    margin: 0px 25px;
+    float: left;
+}
+footer .service,.inf,.tautan {
+    width: 220px;
+}
+footer .alamat{
+    width: 350px;
+    text-align: left;
+}
+footer p {
+    margin-left: 10px;
+}
+
+
+/* end footer */

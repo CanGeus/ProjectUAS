@@ -1,0 +1,54 @@
+body {
+    background-image: url(bg-contact.jpg);
+}
+
+/* contact */
+.contact {
+    width: 900px;
+    margin: 0px auto;
+    padding-top: 100px;
+}
+.box{
+    margin: 50px 0px;
+    background-color: #40b29248;
+    display: flex;
+    padding: 25px;
+    border-radius: 13px;
+    align-items: center;
+    
+}
+.contact .text-contact li {
+    display: flex;
+    align-items: center;
+}
+.contact .text-contact li p {
+    margin-left: 15px;
+}
+.contact .maps {
+    margin-left: 25px;
+}
+.box form {
+    text-align: center;
+    margin: 0px auto;
+}
+.contact .flx {
+    width: 700;
+    display: flex;
+}
+.contact .flx #namadepan,#namabelakang,#email,#phone{
+    width: 50%;
+    height: 50px;
+    margin: 15px;
+}
+.contact form button {
+    margin-top: 25px;
+    border: none;
+    height: 50px;
+}
+.contact .submit-btn{
+    background-color: #40b29248;
+}
+.contact .submit:hover {
+    background-color: #40B291;
+}
+/* end contact */

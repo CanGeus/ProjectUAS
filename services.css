@@ -1,0 +1,122 @@
+body {
+    background-image: url(bg-services.jpg);
+}
+/* search */
+.menu-search {
+    display: flex;
+    padding-top: 120px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.menu-search .item-search {
+    margin: 0px auto;
+
+} 
+.menu-search .search {
+    border: solid 1px #000;
+    padding: 0px;
+    margin: 0px auto;
+    height: 50px;
+    width: fit-content;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.603);
+}
+.menu-search .search form {
+    align-content: center;
+}
+.menu-search input {
+    height: 50px;
+    width: 500px;
+    padding: 0px 10px;
+    border: none;
+    background: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+.menu-search input::-webkit-input-placeholder {
+    color: #000;
+    font-size: 16px;
+}
+.menu-search input:focus{
+    border: none;
+    outline: none;
+}
+.menu-search .searche-btn {
+    height: 54px;
+    padding: 10px 15px;
+    border: none;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.menu-search .img {
+    padding-right: 100px;
+}
+/* end search */
+
+/* 
+.line {
+    margin: 50px 0px;
+    background-color: #001E6C;
+    padding: 5px 0px;
+}
+.line h1 {
+    color: #fff;
+}
+.line marquee {
+    margin: 0px 16px;
+    align-content: center;
+}
+ */
+
+/* informasi */
+.services {
+    padding: 0px 50px 50px;
+    margin: 0px auto;
+    margin-top: 100px;
+    align-items: center;
+}
+.services .services-content {
+    padding: 0px 20px;
+}
+.services h1 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.services .box {
+    min-width: 280px;
+    max-width: 280px;
+    max-height: 280px;
+    min-height: 280px;
+    border-radius: 13px;
+    margin: 10px 10px;
+    transition-duration: 0.7s;
+    overflow: hidden;
+    float: left;
+}
+.img img{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+.text-box {
+    position: relative;
+    text-align: center;
+    margin-top: -100px;
+    max-height: 100px;
+    min-height: 100px;
+    z-index: 2;
+    padding: 10px 10px 25px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.521);
+}
+.descripsi {
+    font-family: ksans;
+}
+.box:hover {
+    background-color: rgba(0, 0, 0, 0.37);
+    box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.37);
+}
+/* end information */

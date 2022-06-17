@@ -1,0 +1,204 @@
+nav .nav-item .login-icon {
+    display: flex;
+    align-items: center;
+    background-color: #40B291;
+    border-radius: 25px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+nav .nav-item .login-icon:hover {
+    color: black;
+}
+nav .nav-item a img {
+    align-items: center;
+    background-color: #40B291;
+    padding: 5px;
+    border-radius: 25px;
+}
+/* jumbotron */
+.jumbotron {
+    padding: 0px 50px;
+}
+.jumbotron-flex {
+    padding-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.jumbotron img {
+    width: 115%;
+}
+.jumbotron h1{
+    font-family: kdam;
+    margin: 0px;
+    font-size: 34pt;
+}
+.jumbotron h3{
+    color: rgb(36, 70, 70);
+    font-family: kdam;
+    font-size: 24px;
+}
+.jumbotron .certivicate {
+    text-align: center;
+}
+
+/* end jumbotron */
+
+/* info */
+
+.info {
+    padding: 120px 50px 50px;
+
+}
+.info table {
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+.info table .head{
+    width: 40%;
+    text-align: left; 
+    vertical-align: unset;
+}
+.info table .head h1{
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+.info table .table{
+    width: 30%; 
+    height: 200px; 
+    padding: 0px 40px; 
+    vertical-align: unset;
+}
+.info table li {
+    margin-right: 20px; 
+    font-weight: bold;
+}
+
+/* end info */
+
+/* doctor */
+.doctor {
+    padding: 0px 50px;
+}
+.doctor h1 {
+    text-align: center;
+}
+.doctor .doctor-spek {
+    display: inline-flex;
+    padding-top: 50px;
+}
+.doctor .spek {
+    width: 60%;
+    padding: 50px 15px 0px;
+}
+.doctor .spek ul {
+    margin-top: 100px;
+}
+.doctor .spek li {
+    display: inline-flex;
+    margin-top: 75PX;
+    width: 45%;
+}
+.doctor .spek li img {
+    background-color: #ffd988;
+    border-radius: 50%;
+    width: 50px;
+    padding: 5px;
+}
+.doctor .text {
+    margin-left: 15px;
+}
+/* end doctor */
+
+/* services */
+.services {
+    padding: 50px;
+}
+.services h1 {
+    width: 100%;
+    text-align: center;
+}
+.services .services-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.services .content {
+    margin:  25px auto 0px;
+    display: inline-flex;
+    text-align: center;
+
+}
+.services .content img {
+    margin: 35px;
+    background-color: #ffd988;
+    padding: 20px;
+    border-radius: 50%;
+}
+/* end services */
+
+/* informasi */
+.informasi {
+    padding: 0px 50px;
+    margin: 0px auto;
+    margin-top: 100px;
+    align-items: center;
+}
+.informasi .informasi-content {
+    padding: 0px 20px;
+}
+.informasi h1 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.informasi .box {
+    min-width: 280px;
+    max-width: 280px;
+    max-height: 280px;
+    min-height: 280px;
+    border-radius: 13px;
+    margin: 10px 10px;
+    transition-duration: 0.7s;
+    overflow: hidden;
+    float: left;
+}
+.img img{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+.text-box {
+    position: relative;
+    margin-top: -150px;
+    max-height: 150px;
+    min-height: 150px;
+    z-index: 2;
+    padding: 10px 10px 25px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+.descripsi {
+    font-family: ksans;
+}
+.box:hover {
+    background-color: rgba(0, 0, 0, 0.37);
+    box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.37);
+}
+/* end information */
+
+/* pemeriksaan */
+.pemeriksaan {
+    clear: both;
+    padding-top: 150px;
+    width: 100%;
+}
+.pemeriksaan .pemeriksaan-content {
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+}
+.pemeriksaan .pemeriksaan-content .text {
+    font-size: 25pt;
+}
+/* end pemeriksaan */
+

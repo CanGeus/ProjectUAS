@@ -1,0 +1,84 @@
+body {
+    background-image: none;
+}
+/* contact */
+h1  {
+    text-align: center;
+}
+.pemeriksaan {
+    width: 900px;
+    margin: 0px auto;
+    padding-top: 100px;
+    font-size: small;
+}
+.box{
+    margin: 50px 0px;
+    background-color: #40b29248;
+    display: flex;
+    padding: 25px;
+    border-radius: 13px;
+    
+}
+.box .alamat {
+    align-items: center;
+}
+.pemeriksaan .text-contact li {
+    display: flex;
+    align-items: center;
+}
+.pemeriksaan .text-contact li p {
+    margin-left: 15px;
+}
+.pemeriksaan .maps {
+    margin-left: 25px;
+}
+.box form {
+    margin: 0px auto;
+}
+.pemeriksaan .flx {
+    align-items: center;
+    width: 700;
+    display: flex;
+}
+.pemeriksaan .flx input,select{
+    width: 300px;
+    height: 50px;
+    margin: 15px;
+}
+.alamat {
+    align-items: center;
+    width: 700;
+    display: flex;
+}
+.alamat  input,#pelayanan,#asuransi{
+    margin: 15px 15px 15px 0px;
+    width: 50%;
+    height: 50px;
+}
+.pemeriksaan .flx label{
+    width: 70px;
+}
+#keluhan {
+    width: 100%;
+    height: 100px;
+    margin: 15px;
+}
+
+.center {
+    margin: 0px auto;
+}
+.pemeriksaan form button {
+    text-align: center;
+    margin: 25px auto;
+    border: none;
+    height: 50px;
+    padding: 0px 25px;
+    border-radius: 13px;
+}
+.pemeriksaan .submit-btn{
+    background-color: #40b29248;
+}
+.pemeriksaan .submit:hover {
+    background-color: #40B291;
+}
+/* end contact */

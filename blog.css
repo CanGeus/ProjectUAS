@@ -1,0 +1,47 @@
+body {
+    background-image: url(bg-blog.jpg);
+}
+/* content */
+.content {
+    padding: 0px 70px;
+}
+.content-main {
+    padding-top: 150px;
+}
+.content .blog .text  {
+    width: 800px;
+    text-align: center;
+}
+.content .blog .text h1 {
+    text-align: center;
+}
+.content .blog .text img {
+    width: 550px;
+    margin: 25px auto;
+
+}
+.content p,h1,h2,h4,ul {
+    text-align: left;
+}
+.list li {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+.author {
+    width: 250px;
+    margin-top: 50px;
+}
+.author .author-inf {
+    text-align: center;
+}
+.author .author-inf p {
+    text-align: center;
+    font-size: smaller;
+    margin-top: -25px;
+}
+.content .main {
+    float: left;
+    margin: 0px 25px;
+    margin-bottom: 100px; 
+}
+/* end content */

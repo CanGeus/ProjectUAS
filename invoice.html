@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>Invoice</title>
+
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="invoice.css">
+	</head>
+
+	<body>
+        <div class="invoice-box">
+			<table>
+				<tr class="top">
+					<td colspan="2">
+						<table>
+							<tr>
+								<td class="title">
+									<img src="logo-dark.png" alt="logo" style="width: 100%; max-width: 300px" />
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr class="information">
+					<td colspan="3">
+						<table>
+							<tr>
+								<td>
+									Jalan HR Rasuna Said<br />
+                                    Blok X5 Kav 4-9<br />
+                                    Kuningan - Jakarta Selatan
+								</td>
+                                <td>
+									Invoice : 001<br />
+									Created: Juni 15 2022<br />
+									Due: Juni 22 2022
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr class="head">
+					<td colspan="3">IDENTITAS PASIEN</td>
+				</tr>
+
+				<tr class="data">
+					<td>Nama</td>
+                    <td>:</td>
+					<td id="nama">  </td>
+				</tr>
+                <tr class="data">
+					<td>Jenis Kelamin</td>
+                    <td>:</td>
+					<td id="kelamin">  </td>
+				</tr>
+
+                <tr class="data">
+					<td>Tempat, Tanggal Lahir</td>
+                    <td>:</td>
+					<td id="ttl">  </td>
+				</tr>
+
+                <tr class="data">
+					<td>alamat</td>
+                    <td>:</td>
+					<td id="alamat">  </td>
+				</tr>
+
+                <tr class="data">
+					<td>Nomor Telephone</td>
+                    <td>:</td>
+					<td id="tlp">  </td>
+				</tr>
+
+                <tr class="data">
+					<td>Pelayanan</td>
+                    <td>:</td>
+					<td id="pelayanan">  </td>
+				</tr>
+
+                <tr class="data">
+					<td>Asuransi</td>
+                    <td>:</td>
+					<td id="ans">  </td>
+				</tr>
+
+                <tr class="data">
+					<td colspan="3"><img class="qr" src="img/qr.svg" width="160px" alt="qr"></td>
+				</tr>
+
+			</table>
+		</div>
+
+        <script>
+            
+            function URLParm(uParm){
+                var sPageURL = window.location.search.substring(1);
+                var sURLVariables = sPageURL.split('&');
+                for (var i = 0; i < sURLVariables.length; i++) 
+                {
+                    var sParameterName = sURLVariables[i].split('=');
+                    if (sParameterName[0] == uParm) 
+                    {
+                        return sParameterName[1];
+                    }
+                }
+            }
+
+            var nDepan = URLParm('depan');
+            var nBelakang = URLParm('belakang');
+            var gender = URLParm('kelamin');
+            var date = URLParm('tanggal');
+            var born = URLParm('lahir');
+            var rt = URLParm('rt');
+            var desa = URLParm('desa');
+            var kec = URLParm('kecamatan');
+            var kab = URLParm('kabupaten');
+            var pone = URLParm('phone');
+            var care = URLParm('pelayanan');
+            var ansurance = URLParm('asuransi');
+            document.getElementById("nama").innerHTML = nDepan + " " + nBelakang;
+            document.getElementById("kelamin").innerHTML = gender;
+            document.getElementById("ttl").innerHTML = born + ", " + date;
+            document.getElementById("alamat").innerHTML = rt + ", " + desa +  ", " + kec + ", " +kab;
+            document.getElementById("tlp").innerHTML = pone;
+            document.getElementById("pelayanan").innerHTML = care;
+            document.getElementById("ans").innerHTML = ansurance;
+            
+        </script>
+
+	</body>
+</html>
